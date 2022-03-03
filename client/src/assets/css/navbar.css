@@ -1,0 +1,17 @@
+.modal-notif{
+    position: absolute;
+    right: 9%;
+    top: 13%;
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}

@@ -1,0 +1,27 @@
+npm install -g npm
+npm init
+
+npm install express --save
+npm install --save-dev nodemon
+npm install --save sequelize
+npm install sequelize-cli
+npm install mysql2
+npm i multer
+npm i joi
+npm i jsonwebtoken
+npm i dotenv
+npm i bcrypt
+npm i concurrently
+npm i cors
+
+npm run dev
+
+npx sequelize init
+npx sequelize-cli model:generate --name user --attributes name:string,number_acc:integer,email:string,password:string,avatar:string
+npx sequelize-cli model:generate --name category --attributes category:string
+npx sequelize-cli model:generate --name film --attributes idCategory:integer,title:string,image:string,link:string,desc:string
+npx sequelize-cli model:generate --name transaction --attributes idUser:integer,idFilm:integer,status_pay:string,bank_pay:string
+npx sequelize-cli model:generate --name filmCategory --attributes idFilm:integer,idCategory:integer
+
+npx sequelize db:migrate
+npx sequelize db:migrate:undo:all 
